@@ -49,16 +49,6 @@ pkmn = Pokemon
 | **!welcome** \[@member\] | *Owner Only* | Sends the welcome message to either user or mentioned member. |
 | **!outputlog**  | *Server Manager Only* | Uploads the log file to hastebin and replies with the link. |
 
-### Pokemon Notification Commands:
-
-| Commands | Requirements  | Description |
-| -------- |:-------------:| ------------|
-| **!want** \<pkmn\> | - | Adds a Pokemon to your notification roles. |
-| **!unwant** \<pkmn\> | - | Removes a Pokemon from your notification roles. |
-| **!unwant all**  | - | Removes all Pokemon from your notification roles. |
-| **!wild** \<pkmn\> \<location\> | *Region Channel* | Reports a wild pokemon, notifying people who want it. |
-
-
 ### Raid Commands:
 
 | Commands | Requirements  | Description |
