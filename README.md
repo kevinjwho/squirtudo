@@ -7,28 +7,28 @@ Squirtudo is a Discord bot written in Python 3.5 using version 0.16.12 of the di
 Arguments:
 ```
   --help, -h          Show the help message
-  --start, -s         Starts Meowth
-  --auto-restart, -r  Auto-Restarts Meowth in case of a crash.
+  --start, -s         Starts Squirtudo
+  --auto-restart, -r  Auto-Restarts Squirtudo in case of a crash.
   --debug, -d         Prevents output being sent to Discord DM, as restarting
                       could occur often.
 ```
 
-Launch Meowth normally:
+Launch Squirtudo normally:
 ```bash
 python3 launcher.py -s
 ```
 
-Launch Meowth in debug mode if working on code changes:
+Launch Squirtudo in debug mode if working on code changes:
 ```bash
 python3 launcher.py -s -d
 ```
 
-Launch Meowth with Auto-Restart:
+Launch Squirtudo with Auto-Restart:
 ```bash
 python3 launcher.py -s -r
 ```
 
-## Directions for using Meowth:
+## Directions for using Squirtudo:
 Note: Avoid punctuation inside commands.
 
 Arguments within \< \> are required.<br/>
@@ -40,11 +40,11 @@ pkmn = Pokemon
 | Commands | Requirements  | Description |
 | -------- |:-------------:| ------------|
 | **!help** \[command\] | - | Shows bot/command help, with descriptions. |
-| **!about** | - | Shows info about Meowth. |
+| **!about** | - | Shows info about Squirtudo. |
 | **!team** \<team\> | - | Let's users set their team role. |
 | **!save**  | *Owner Only* | Saves the save data to file. |
-| **!exit**  | *Owner Only* | Saves the save data to file and shutdown Meowth. |
-| **!restart**  | *Owner Only* | Saves the save data to file and restarts Meowth. |
+| **!exit**  | *Owner Only* | Saves the save data to file and shutdown Squirtudo. |
+| **!restart**  | *Owner Only* | Saves the save data to file and restarts Squirtudo. |
 | **!announce** \[msg\] | *Owner Only* | Sends announcement message to server owners. |
 | **!welcome** \[@member\] | *Owner Only* | Sends the welcome message to either user or mentioned member. |
 | **!outputlog**  | *Server Manager Only* | Uploads the log file to hastebin and replies with the link. |
