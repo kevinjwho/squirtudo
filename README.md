@@ -1,4 +1,4 @@
-# MSquirtudo
+# Squirtudo
 A Discord helper bot for Pokemon Go communities. Based off of FoglyOgly's Meowth helper bot: https://github.com/FoglyOgly/Meowth
 
 Squirtudo is a Discord bot written in Python 3.5 using version 0.16.12 of the discord.py library.
