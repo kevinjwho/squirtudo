@@ -1967,3 +1967,791 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Key
 [31/01/2018 22:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
 [31/01/2018 22:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
 [31/01/2018 22:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[31/01/2018 23:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[31/01/2018 23:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[31/01/2018 23:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 23:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 23:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 23:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 23:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 00:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 00:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 00:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 00:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 01:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 01:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 01:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 01:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 01:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 01:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 01:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 02:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 02:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 02:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 02:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 03:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 03:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 03:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 03:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 03:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 03:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 03:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 04:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 04:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 04:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 04:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 05:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 05:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 05:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 05:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 05:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 05:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 05:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 06:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 06:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 06:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 06:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 07:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 07:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 07:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 07:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 07:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 07:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 07:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 08:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 08:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 08:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 08:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 09:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 09:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 09:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 09:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 09:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 09:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 09:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:19] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-quad
+[01/02/2018 10:19] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-quad
+[01/02/2018 10:19] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-quad
+[01/02/2018 10:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:24] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 10:24] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (level-5-egg-quad) - EXISTS IN DISCORD
+[01/02/2018 10:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:34] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 10:34] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (level-5-egg-quad) - EXISTS IN DISCORD
+[01/02/2018 10:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:34] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-quad
+[01/02/2018 10:34] INFO __main__ expiry_check 310: Expiry_Check - kyogre-quad
+[01/02/2018 10:34] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-quad
+[01/02/2018 10:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:44] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 10:44] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (kyogre-quad) - EXISTS IN DISCORD
+[01/02/2018 10:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 10:44] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-peace-tree-sculpture
+[01/02/2018 10:44] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-peace-tree-sculpture
+[01/02/2018 10:44] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-peace-tree-sculpture
+[01/02/2018 10:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 10:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 10:54] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 10:54] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (kyogre-quad) - EXISTS IN DISCORD
+[01/02/2018 10:54] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 10:54] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (level-5-egg-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 10:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 10:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:04] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 11:04] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (kyogre-quad) - EXISTS IN DISCORD
+[01/02/2018 11:04] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:04] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (level-5-egg-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:14] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 11:14] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (kyogre-quad) - EXISTS IN DISCORD
+[01/02/2018 11:14] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:14] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (level-5-egg-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:16] INFO __main__ expiry_check 310: Expiry_Check - level-1-egg-starbucks
+[01/02/2018 11:16] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-1-egg-starbucks
+[01/02/2018 11:16] INFO __main__ expiry_check 310: Expiry_Check - level-1-egg-starbucks
+[01/02/2018 11:19] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - kyogre-quad
+[01/02/2018 11:19] INFO __main__ expire_channel 348: Expire_Channel - kyogre-quad
+[01/02/2018 11:19] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-quad
+[01/02/2018 11:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:24] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - CHECKING
+[01/02/2018 11:24] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 (kyogre-quad) - EXISTS IN DISCORD
+[01/02/2018 11:24] INFO __main__ channel_cleanup 501: Channel_Cleanup - Server: PoGoCollegePark: Channel:408642489772408832 - = RECENTLY EXPIRED NONACTIVE RAID
+[01/02/2018 11:24] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:24] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (level-5-egg-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:24] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 - CHECKING
+[01/02/2018 11:24] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 (level-1-egg-starbucks) - EXISTS IN DISCORD
+[01/02/2018 11:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:24] INFO __main__ expire_channel 348: Expire_Channel - kyogre-quad
+[01/02/2018 11:24] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-quad
+[01/02/2018 11:24] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - kyogre-quad
+[01/02/2018 11:31] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - level-1-egg-starbucks
+[01/02/2018 11:31] INFO __main__ expire_channel 348: Expire_Channel - level-1-egg-starbucks
+[01/02/2018 11:31] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - level-1-egg-starbucks
+[01/02/2018 11:33] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-garden-of-reflection
+[01/02/2018 11:33] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-garden-of-reflection
+[01/02/2018 11:33] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-garden-of-reflection
+[01/02/2018 11:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:34] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:34] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (level-5-egg-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:34] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 - CHECKING
+[01/02/2018 11:34] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 (level-1-egg-starbucks) - EXISTS IN DISCORD
+[01/02/2018 11:34] INFO __main__ channel_cleanup 501: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 - = RECENTLY EXPIRED NONACTIVE RAID
+[01/02/2018 11:34] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 11:34] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 (level-5-egg-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 11:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:34] INFO __main__ expire_channel 348: Expire_Channel - level-1-egg-starbucks
+[01/02/2018 11:34] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - level-1-egg-starbucks
+[01/02/2018 11:42] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-peace-tree-sculpture
+[01/02/2018 11:42] INFO __main__ expiry_check 310: Expiry_Check - kyogre-peace-tree-sculpture
+[01/02/2018 11:42] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-peace-tree-sculpture
+[01/02/2018 11:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 11:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 11:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 11:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:44] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:44] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (kyogre-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:44] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 - CHECKING
+[01/02/2018 11:44] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 (level-1-egg-starbucks) - EXISTS IN DISCORD
+[01/02/2018 11:44] INFO __main__ channel_cleanup 501: Channel_Cleanup - Server: PoGoCollegePark: Channel:408656803854024705 - = RECENTLY EXPIRED NONACTIVE RAID
+[01/02/2018 11:44] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 11:44] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 (level-5-egg-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 11:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 11:44] INFO __main__ expire_channel 348: Expire_Channel - level-1-egg-starbucks
+[01/02/2018 11:44] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - level-1-egg-starbucks
+[01/02/2018 11:46] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - level-1-egg-starbucks
+[01/02/2018 11:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 11:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 11:54] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 11:54] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (kyogre-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 11:54] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 11:54] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 (level-5-egg-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 11:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 11:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:04] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 12:04] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (kyogre-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 12:04] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 12:04] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 (level-5-egg-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:04] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-garden-of-reflection
+[01/02/2018 12:04] INFO __main__ expiry_check 310: Expiry_Check - kyogre-garden-of-reflection
+[01/02/2018 12:04] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-garden-of-reflection
+[01/02/2018 12:04] INFO __main__ <module> 57: Serverdict Loaded Successfully
+[01/02/2018 12:05] INFO __main__ _print 611: Starting up...
+[01/02/2018 12:05] INFO __main__ _print 611: 
+
+1 servers connected.
+218 members found.
+[01/02/2018 12:05] INFO __main__ maint_start 617: Maintenance Tasks Started
+[01/02/2018 12:05] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 12:05] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 12:05] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 12:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 12:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 (kyogre-peace-tree-sculpture) - EXISTS IN DISCORD
+[01/02/2018 12:05] INFO __main__ channel_cleanup 539: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - MISSING FROM EXPIRY CHECK
+[01/02/2018 12:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 12:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 (kyogre-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:05] INFO __main__ channel_cleanup 532: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - RECENTLY EXPIRED
+[01/02/2018 12:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:05] INFO __main__ expiry_check 310: Expiry_Check - kyogre-peace-tree-sculpture
+[01/02/2018 12:05] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-peace-tree-sculpture
+[01/02/2018 12:05] INFO __main__ expire_channel 348: Expire_Channel - kyogre-garden-of-reflection
+[01/02/2018 12:05] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-garden-of-reflection
+[01/02/2018 12:07] INFO __main__ expiry_check 310: Expiry_Check - kyogre-garden-of-reflection
+[01/02/2018 12:07] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-garden-of-reflection
+[01/02/2018 12:07] INFO __main__ expiry_check 310: Expiry_Check - kyogre-garden-of-reflection
+[01/02/2018 12:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - CHECKING
+[01/02/2018 12:15] INFO __main__ channel_cleanup 465: Channel_Cleanup - Server: PoGoCollegePark: Channel:408648813859962880 - DOESN'T EXIST IN DISCORD
+[01/02/2018 12:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - CHECKING
+[01/02/2018 12:15] INFO __main__ channel_cleanup 465: Channel_Cleanup - Server: PoGoCollegePark: Channel:408661168060891136 - DOESN'T EXIST IN DISCORD
+[01/02/2018 12:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 - CHECKING
+[01/02/2018 12:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 (kyogre-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:15] INFO __main__ channel_cleanup 547: Channel_Cleanup - Channel Savedata Cleared - 408648813859962880
+[01/02/2018 12:15] INFO __main__ channel_cleanup 547: Channel_Cleanup - Channel Savedata Cleared - 408661168060891136
+[01/02/2018 12:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 - CHECKING
+[01/02/2018 12:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 (kyogre-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 - CHECKING
+[01/02/2018 12:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 (kyogre-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:41] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-cp-fire-dept
+[01/02/2018 12:41] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-cp-fire-dept
+[01/02/2018 12:41] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-cp-fire-dept
+[01/02/2018 12:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 - CHECKING
+[01/02/2018 12:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408669662751227914 (kyogre-garden-of-reflection) - EXISTS IN DISCORD
+[01/02/2018 12:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 12:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (level-5-egg-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 12:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 12:49] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - kyogre-garden-of-reflection
+[01/02/2018 12:49] INFO __main__ expire_channel 348: Expire_Channel - kyogre-garden-of-reflection
+[01/02/2018 12:49] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-garden-of-reflection
+[01/02/2018 12:54] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - kyogre-garden-of-reflection
+[01/02/2018 12:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 12:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 12:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 12:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (level-5-egg-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 12:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 12:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (level-5-egg-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (level-5-egg-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (level-5-egg-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:33] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-cp-fire-dept
+[01/02/2018 13:33] INFO __main__ expiry_check 310: Expiry_Check - kyogre-cp-fire-dept
+[01/02/2018 13:33] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-cp-fire-dept
+[01/02/2018 13:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (kyogre-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (kyogre-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 13:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 13:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 13:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 13:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (kyogre-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 13:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 13:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:05] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 14:05] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 14:05] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 14:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 14:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (kyogre-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 14:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 - CHECKING
+[01/02/2018 14:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408678232771264512 (kyogre-cp-fire-dept) - EXISTS IN DISCORD
+[01/02/2018 14:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:18] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - kyogre-cp-fire-dept
+[01/02/2018 14:18] INFO __main__ expire_channel 348: Expire_Channel - kyogre-cp-fire-dept
+[01/02/2018 14:18] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-cp-fire-dept
+[01/02/2018 14:23] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - kyogre-cp-fire-dept
+[01/02/2018 14:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:27] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-university-baptist-church
+[01/02/2018 14:27] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-university-baptist-church
+[01/02/2018 14:27] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-university-baptist-church
+[01/02/2018 14:28] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-whyisalexamod
+[01/02/2018 14:28] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-whyisalexamod
+[01/02/2018 14:28] INFO __main__ duplicate 2993: Duplicate Report - Channel Expired - level-5-egg-whyisalexamod - Last Report by [Instinct -1000] Pikashyu
+[01/02/2018 14:28] INFO __main__ expire_channel 348: Expire_Channel - level-5-egg-whyisalexamod
+[01/02/2018 14:28] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - level-5-egg-whyisalexamod
+[01/02/2018 14:29] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - level-5-egg-whyisalexamod
+[01/02/2018 14:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 14:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (level-5-egg-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 14:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 14:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (level-5-egg-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 14:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 14:45] INFO __main__ expiry_check 310: Expiry_Check - level-4-egg-peach-tree
+[01/02/2018 14:45] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-4-egg-peach-tree
+[01/02/2018 14:45] INFO __main__ expiry_check 310: Expiry_Check - level-4-egg-peach-tree
+[01/02/2018 14:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 14:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 14:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 14:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (level-5-egg-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 14:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 14:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (level-4-egg-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 14:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 14:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (level-5-egg-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 15:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (level-4-egg-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 15:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (level-5-egg-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 15:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (level-4-egg-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 15:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:17] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - level-4-egg-peach-tree
+[01/02/2018 15:17] INFO __main__ expire_channel 348: Expire_Channel - level-4-egg-peach-tree
+[01/02/2018 15:17] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - level-4-egg-peach-tree
+[01/02/2018 15:18] INFO __main__ expiry_check 310: Expiry_Check - nidoking-peach-tree
+[01/02/2018 15:18] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - nidoking-peach-tree
+[01/02/2018 15:20] INFO __main__ duplicate 2993: Duplicate Report - Channel Expired - nidoking-peach-tree - Last Report by whiffel
+[01/02/2018 15:20] ERROR errors on_command_error 276: CommandInvokeError
+Traceback (most recent call last):
+  File "C:\Users\Anna\Anaconda3\lib\site-packages\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "squirtudo\__main__.py", line 2994, in duplicate
+    t_dict[author.id]['dupereporter'] = False
+KeyError: '143822818247704576'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anna\Anaconda3\lib\site-packages\discord\ext\commands\bot.py", line 846, in process_commands
+    yield from command.invoke(ctx)
+  File "C:\Users\Anna\Anaconda3\lib\site-packages\discord\ext\commands\core.py", line 374, in invoke
+    yield from injected(*ctx.args, **ctx.kwargs)
+  File "C:\Users\Anna\Anaconda3\lib\site-packages\discord\ext\commands\core.py", line 54, in wrapped
+    raise CommandInvokeError(e) from e
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: KeyError: '143822818247704576'
+[01/02/2018 15:22] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-university-baptist-church
+[01/02/2018 15:22] INFO __main__ expiry_check 310: Expiry_Check - kyogre-university-baptist-church
+[01/02/2018 15:22] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-university-baptist-church
+[01/02/2018 15:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (kyogre-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 15:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (nidoking-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 15:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (kyogre-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 15:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (nidoking-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 15:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (kyogre-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 - CHECKING
+[01/02/2018 15:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408709460723367936 (nidoking-peach-tree) - EXISTS IN DISCORD
+[01/02/2018 15:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 15:52] INFO __main__ duplicate 2993: Duplicate Report - Channel Expired - nidoking-peach-tree - Last Report by [Instinct -1000] Pikashyu
+[01/02/2018 15:52] INFO __main__ expire_channel 348: Expire_Channel - nidoking-peach-tree
+[01/02/2018 15:52] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - nidoking-peach-tree
+[01/02/2018 15:53] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - nidoking-peach-tree
+[01/02/2018 15:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 15:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 15:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 15:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (kyogre-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 15:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 15:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:05] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 16:05] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 16:05] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 16:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 - CHECKING
+[01/02/2018 16:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408705000030863360 (kyogre-university-baptist-church) - EXISTS IN DISCORD
+[01/02/2018 16:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:07] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - kyogre-university-baptist-church
+[01/02/2018 16:07] INFO __main__ expire_channel 348: Expire_Channel - kyogre-university-baptist-church
+[01/02/2018 16:07] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-university-baptist-church
+[01/02/2018 16:12] INFO __main__ expire_channel 428: Expire_Channel - Channel Deleted - kyogre-university-baptist-church
+[01/02/2018 16:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 16:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 16:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 16:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 16:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:09] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-testudo-at-xfinity-center
+[01/02/2018 17:09] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-testudo-at-xfinity-center
+[01/02/2018 17:09] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-testudo-at-xfinity-center
+[01/02/2018 17:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 17:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (level-5-egg-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 17:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 17:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (level-5-egg-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 17:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 17:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (level-5-egg-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 17:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 17:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (level-5-egg-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 17:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 17:55] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 17:55] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 17:55] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 17:55] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (level-5-egg-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 17:55] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 17:55] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:02] INFO __main__ expiry_check 325: Expire_Channel - Egg Auto Hatched - level-5-egg-testudo-at-xfinity-center
+[01/02/2018 18:02] INFO __main__ expiry_check 310: Expiry_Check - kyogre-testudo-at-xfinity-center
+[01/02/2018 18:02] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - kyogre-testudo-at-xfinity-center
+[01/02/2018 18:05] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[01/02/2018 18:05] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[01/02/2018 18:05] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[01/02/2018 18:05] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 18:05] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 18:05] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 18:05] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (kyogre-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 18:05] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 18:05] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:15] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 18:15] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 18:15] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 18:15] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (kyogre-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 18:15] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 18:15] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:16] INFO __main__ expiry_check 310: Expiry_Check - tyranitar-smoothie-king
+[01/02/2018 18:16] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - tyranitar-smoothie-king
+[01/02/2018 18:16] INFO __main__ expiry_check 310: Expiry_Check - tyranitar-smoothie-king
+[01/02/2018 18:25] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 18:25] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 18:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 18:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (kyogre-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 18:25] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 - CHECKING
+[01/02/2018 18:25] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 (tyranitar-smoothie-king) - EXISTS IN DISCORD
+[01/02/2018 18:25] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 18:25] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:35] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 18:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 18:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 18:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (kyogre-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 18:35] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 - CHECKING
+[01/02/2018 18:35] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 (tyranitar-smoothie-king) - EXISTS IN DISCORD
+[01/02/2018 18:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 18:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:45] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[01/02/2018 18:45] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[01/02/2018 18:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 - CHECKING
+[01/02/2018 18:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408745625447038977 (kyogre-testudo-at-xfinity-center) - EXISTS IN DISCORD
+[01/02/2018 18:45] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 - CHECKING
+[01/02/2018 18:45] INFO __main__ channel_cleanup 468: Channel_Cleanup - Server: PoGoCollegePark: Channel:408762615532093440 (tyranitar-smoothie-king) - EXISTS IN DISCORD
+[01/02/2018 18:45] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[01/02/2018 18:45] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[01/02/2018 18:47] INFO __main__ expiry_check 337: Expire_Channel - Channel Expired And Removed From Watchlist - kyogre-testudo-at-xfinity-center
+[01/02/2018 18:47] INFO __main__ expire_channel 348: Expire_Channel - kyogre-testudo-at-xfinity-center
+[01/02/2018 18:47] INFO __main__ expire_channel 367: Expire_Channel - Channel Expired - kyogre-testudo-at-xfinity-center
