@@ -3267,7 +3267,7 @@ async def _lobby(message, count):
     trainer_dict[message.author.id]['count'] = count
     server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['trainer_dict'] = trainer_dict
 
-@Squirtudo.command(pass_context=True,aliases=["out"])
+@Squirtudo.command(pass_context=True,aliases=["out","o"])
 @checks.activeraidchannel()
 async def cancel(ctx):
     """Indicate you are no longer interested in a raid.
