@@ -1928,3 +1928,42 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Key
 [31/01/2018 21:35] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
 [31/01/2018 21:35] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
 [31/01/2018 21:35] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 21:44] INFO __main__ <module> 57: Serverdict Loaded Successfully
+[31/01/2018 21:44] INFO __main__ _print 611: Starting up...
+[31/01/2018 21:44] INFO __main__ _print 611: 
+
+1 servers connected.
+218 members found.
+[31/01/2018 21:44] INFO __main__ maint_start 617: Maintenance Tasks Started
+[31/01/2018 21:44] INFO __main__ server_cleanup 575: Server_Cleanup ------ BEGIN ------
+[31/01/2018 21:44] INFO __main__ server_cleanup 597: Server_Cleanup - SAVING CHANGES
+[31/01/2018 21:44] INFO __main__ server_cleanup 602: Server_Cleanup ------ END ------
+[31/01/2018 21:44] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 21:44] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 21:44] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 21:44] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 21:44] INFO __main__ expiry_check 310: Expiry_Check - level-5-egg-test
+[31/01/2018 21:44] INFO __main__ expiry_check 315: Expire_Channel - Channel Added To Watchlist - level-5-egg-test
+[31/01/2018 21:54] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 21:54] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 21:54] INFO __main__ channel_cleanup 458: Channel_Cleanup - Server: PoGoCollegePark: Channel:408452636677767178 - CHECKING
+[31/01/2018 21:54] INFO __main__ channel_cleanup 465: Channel_Cleanup - Server: PoGoCollegePark: Channel:408452636677767178 - DOESN'T EXIST IN DISCORD
+[31/01/2018 21:54] INFO __main__ channel_cleanup 547: Channel_Cleanup - Channel Savedata Cleared - 408452636677767178
+[31/01/2018 21:54] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 21:54] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:04] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:04] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:04] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:04] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:14] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:14] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:14] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:14] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:24] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:24] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:24] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:24] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
+[31/01/2018 22:34] INFO __main__ channel_cleanup 437: Channel_Cleanup ------ BEGIN ------
+[31/01/2018 22:34] INFO __main__ channel_cleanup 447: Channel_Cleanup - Server: 352916057532661774 - CHECKING FOR SERVER (PoGoCollegePark)  - BEGIN CHECKING SERVER
+[31/01/2018 22:34] INFO __main__ channel_cleanup 562: Channel_Cleanup - SAVING CHANGES
+[31/01/2018 22:34] INFO __main__ channel_cleanup 567: Channel_Cleanup ------ END ------
