@@ -1336,7 +1336,7 @@ async def clearstatus(ctx):
     except KeyError:
         pass
 
-@Squirtudo.command(pass_context=True)
+@Squirtudo.command(pass_context=True,aliases=["ss"])
 @commands.has_permissions(manage_server=True)
 @checks.raidchannel()
 async def setstatus(ctx, user, status, count=None):
@@ -2918,7 +2918,7 @@ async def recover(ctx):
         await Squirtudo.send_message(channel, recovermsg)
         event_loop.create_task(expiry_check(channel))
 
-@Squirtudo.command(pass_context=True)
+@Squirtudo.command(pass_context=True,aliases=["dupe","d","del"])
 @checks.activeraidchannel()
 async def duplicate(ctx):
     """A command to report a raid channel as a duplicate.
@@ -3267,7 +3267,7 @@ async def _lobby(message, count):
     trainer_dict[message.author.id]['count'] = count
     server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['trainer_dict'] = trainer_dict
 
-@Squirtudo.command(pass_context=True,aliases=["out"])
+@Squirtudo.command(pass_context=True,aliases=["out","o"])
 @checks.activeraidchannel()
 async def cancel(ctx):
     """Indicate you are no longer interested in a raid.
