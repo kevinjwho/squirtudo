@@ -2983,7 +2983,8 @@ async def duplicate(ctx):
                 logger.info("Duplicate Report - Cancelled - "+channel.name+" - Report by "+author.display_name)
                 dupecount = 0
                 server_dict[server.id]['raidchannel_dict'][channel.id]['duplicate'] = dupecount
-                t_dict[author.id]['dupereporter'] = False
+                if not can_manage:
+                    t_dict[author.id]['dupereporter'] = False
                 await asyncio.sleep(10)
                 await Squirtudo.delete_message(confirmation)
                 return
@@ -3000,7 +3001,8 @@ async def duplicate(ctx):
             logger.info("Duplicate Report - Timeout - "+channel.name+" - Report by "+author.display_name)
             dupecount = 0
             server_dict[server.id]['raidchannel_dict'][channel.id]['duplicate'] = dupecount
-            t_dict[author.id]['dupereporter'] = False
+            if not can_manage:
+                t_dict[author.id]['dupereporter'] = False
             await asyncio.sleep(10)
             await Squirtudo.delete_message(confirmation)
     else:
