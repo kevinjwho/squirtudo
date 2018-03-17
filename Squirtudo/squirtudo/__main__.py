@@ -3007,6 +3007,21 @@ async def new(ctx):
                 user = message.server.get_member(trainer)
                 otw_list.append(user.mention)
         await Squirtudo.send_message(message.channel, content = _("Someone has suggested a different location for the raid! Trainers **{trainer_list}**: make sure you are headed to the right place!").format(trainer_list=", ".join(otw_list)), embed = newembed)
+        rc_d=server_dict[message.server.id]['raidchannel_dict'][message.channel.id]
+        rc_d['address']=details
+        new_details=""
+        if rc_d['type'] is 'egg':
+            if rc_d['egglevel'] is not 'EX':
+                new_details = "level-" + rc_d['egglevel'] + "-egg-" + sanitize_channel_name(details)
+            else:
+                new_details = "ex-raid-egg-" + sanitize_channel_name(details)
+        else:
+            new_details = rc_d['pokemon'] + "-" + sanitize_channel_name(details)
+        if message.channel.name[0].isdigit():
+            new_name=rc_d['starttime'].strftime("%I%M%p-") + new_details
+            await Squirtudo.edit_channel(message.channel, name=new_name)
+        else:
+            await Squirtudo.edit_channel(message.channel, name=new_details)
         for field in oldembed['fields']:
             if "team" in field['name'].lower() or "status" in field['name'].lower():
                 newembed.add_field(name=field['name'], value=field['value'], inline=field['inline'])
