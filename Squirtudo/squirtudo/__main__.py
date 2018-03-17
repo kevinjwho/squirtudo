@@ -482,7 +482,7 @@ If this was in error, reset the raid with **!timerset**"""))
             if not alreadyexpired:
                 new_name = "expired-" + channel.name
                 await Squirtudo.edit_channel(channel,name=new_name)
-                await Squirtudo.send_message(channel, _("""This channel timer has expired! The channel has been deactivated and will be deleted in 5 minutes.
+                await Squirtudo.send_message(channel, _("""This channel timer has expired! The channel has been deactivated and will be deleted in 3 minutes.
 To reactivate the channel, use **!timerset** to set the timer again."""))
             delete_time = server_dict[server.id]['raidchannel_dict'][channel.id]['exp'] + (5 * 60) - time.time()
             expiremsg = _("**This {pokemon} raid has expired!**").format(pokemon=server_dict[channel.server.id]['raidchannel_dict'][channel.id]['pokemon'].capitalize())
@@ -576,8 +576,8 @@ async def channel_cleanup(loop=True):
 
                         else:
 
-                            #and if it has been expired for longer than 5 minutes already
-                            if serverdict_chtemp[serverid]['raidchannel_dict'][channelid]['exp'] < (time.time() - (5 * 60)):
+                            #and if it has been expired for longer than 3 minutes already
+                            if serverdict_chtemp[serverid]['raidchannel_dict'][channelid]['exp'] < (time.time() - (3 * 60)):
 
                                 #list the channel to be removed from save data
                                 dict_channel_delete.append(channelid)
@@ -645,7 +645,7 @@ async def channel_cleanup(loop=True):
             logger.info("Channel_Cleanup - SAVING FAILED" + err)
         logger.info("Channel_Cleanup ------ END ------")
 
-        await asyncio.sleep(600)#600 default
+        await asyncio.sleep(300)#600 default
         continue
 
 async def server_cleanup(loop=True):
@@ -1468,7 +1468,9 @@ async def clearstatus(ctx):
         await Squirtudo.send_message(ctx.message.channel,"Raid status lists have been cleared!")
         if ctx.message.channel.name.startswith("0") or ctx.message.channel.name.startswith("1"):
             new_channel_name=ctx.message.channel.name[7:]
-        await Squirtudo.edit_channel(ctx.message.channel,name=new_channel_name)
+            await Squirtudo.edit_channel(ctx.message.channel,name=new_channel_name)
+        if server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']:
+            del server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']
     except KeyError:
         pass
 
