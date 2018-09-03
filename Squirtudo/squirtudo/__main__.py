@@ -3281,7 +3281,7 @@ async def duplicate(ctx):
 Status Management
 """
 
-@Squirtudo.command(pass_context=True,aliases=["i","maybe"])
+@Squirtudo.command(pass_context=True,aliases=["i","maybe","m"])
 @checks.activeraidchannel()
 async def interested(ctx, *, teamcounts: str = None):
     """Indicate you are interested in the raid.
@@ -3722,7 +3722,7 @@ async def _cancel(channel, author):
     t_dict['count'] = 1
     await _edit_party(channel, author)
 
-@Squirtudo.command(pass_context=True,aliases=["goin","go"])
+@Squirtudo.command(pass_context=True,aliases=["goin","go","start"])
 @checks.activeraidchannel()
 async def starting(ctx):
     """Signal that a raid is starting.
@@ -4039,12 +4039,11 @@ async def _sethere(ctx, extras_list, unknown_list):
             await ctx.bot.process_commands(ctx.message)
 
 @Squirtudo.command(pass_context=True,aliases=["sc"])
-@commands.has_permissions(manage_server=True)
 @checks.activeraidchannel()
 async def setcoming(ctx, *, extras: str = None):
     """Set trainers as here.
 
-    Usage: !setcoming <extras> // sets <extras> status to *here* -- those users can then update their status accordingly.
+    Usage: !setcoming <extras> // sets <extras> status to *coming* -- those users can then update their status accordingly.
     (works with or without comma separation, but assumes a space corresponds to a new user)
     Works only in raid channels. Works only with existing discord users who are members in the server."""
     trainer_dict = server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict']
@@ -4071,6 +4070,37 @@ async def _setcoming(ctx, extras_list, unknown_list):
             ctx.message.content ="{}{} {}".format(ctx.prefix, 'c', '')
             await ctx.bot.process_commands(ctx.message)
 
+@Squirtudo.command(pass_context=True,aliases=["so","sx"])
+@checks.activeraidchannel()
+async def setout(ctx, *, extras: str = None):
+    """Set trainers as here.
+
+    Usage: !setout <extras> // sets <extras> status to *out* -- those users can then update their status accordingly.
+    (works with or without comma separation, but assumes a space corresponds to a new user)
+    Works only in raid channels. Works only with existing discord users who are members in the server."""
+    trainer_dict = server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict']
+    if extras is not None:
+        extras_list = ctx.message.raw_mentions
+        trainer_list = []
+        for member in ctx.message.server.members:
+            trainer_list.append(member)
+        unknown_list = set(trainer_list) - set(extras_list)
+    else:
+        await Squirtudo.send_message(ctx.message.channel, _("You didn't add anyone!"))
+        return
+
+    await _setout(ctx, extras_list, unknown_list)
+
+async def _setout(ctx, extras_list, unknown_list):
+    if extras_list:
+        extras_mention = []
+        extras_name = []
+        for extras in extras_list:
+            user = ctx.message.server.get_member(extras)
+            extras_mention.append(user.display_name)
+            ctx.message.author = user
+            ctx.message.content ="{}{} {}".format(ctx.prefix, 'o', '')
+            await ctx.bot.process_commands(ctx.message)
 
 @list.command(pass_context=True,aliases=["i"])
 @checks.activeraidchannel()
