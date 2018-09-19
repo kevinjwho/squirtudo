@@ -28,6 +28,9 @@ from operator import itemgetter
 from errors import custom_error_handling
 import dateparser
 
+sys.path.append('squirtudo/tools')
+import getGymLink
+
 tessdata_dir_config = "--tessdata-dir 'C:\\Program Files (x86)\\Tesseract-OCR\\tessdata' "
 xtraconfig = "-l eng -c tessedit_char_blacklist=&|=+%#^*[]{};<> -psm 6"
 
@@ -795,35 +798,6 @@ async def on_message(message):
                 if message.content.startswith(here_emoji):
                     emoji_count = message.content.count(here_emoji)
                     await _here(message.channel, message.author, emoji_count, party=None)
-                    return
-                if "/maps" in message.content and "http" in message.content:
-                    newloc = create_gmaps_query(message.content, message.channel)
-                    oldraidmsg = await Squirtudo.get_message(message.channel, server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidmessage'])
-                    report_channel = Squirtudo.get_channel(server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['reportcity'])
-                    oldreportmsg = await Squirtudo.get_message(report_channel, server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidreport'])
-                    oldembed = oldraidmsg.embeds[0]
-                    newembed = discord.Embed(title=oldembed['title'],url=newloc,colour=message.server.me.colour)
-                    for field in oldembed['fields']:
-                        newembed.add_field(name=field['name'], value=field['value'], inline=field['inline'])
-                    newembed.set_footer(text=oldembed['footer']['text'], icon_url=oldembed['footer']['icon_url'])
-                    newembed.set_thumbnail(url=oldembed['thumbnail']['url'])
-                    try:
-                        newraidmsg = await Squirtudo.edit_message(oldraidmsg, new_content=oldraidmsg.content, embed=newembed)
-                    except:
-                        pass
-                    try:
-                        newreportmsg = await Squirtudo.edit_message(oldreportmsg, new_content=oldreportmsg.content, embed=newembed)
-                    except:
-                        pass
-                    server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidmessage'] = newraidmsg.id
-                    server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidreport'] = newreportmsg.id
-                    otw_list = []
-                    trainer_dict = copy.deepcopy(server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['trainer_dict'])
-                    for trainer in trainer_dict.keys():
-                        if trainer_dict[trainer]['status']=='omw':
-                            user = message.server.get_member(trainer)
-                            otw_list.append(user.mention)
-                    await Squirtudo.send_message(message.channel, content = _("Someone has suggested a different location for the raid! Trainers {trainer_list}: make sure you are headed to the right place!").format(trainer_list=", ".join(otw_list)), embed = newembed)
                     return
 
     if message.content.startswith(_get_prefix(Squirtudo, message)):
@@ -2037,7 +2011,7 @@ async def _raid(message):
     if raid_details == '':
         await Squirtudo.send_message(message.channel, _("Give more details when reporting! Usage: **!raid <pokemon name> <location>**"))
         return
-    raid_gmaps_link = create_gmaps_query(raid_details, message.channel)
+    raid_gmaps_link = getGymLink.getLink(raid_details)
 
     raid_channel_name = entered_raid + "-" + sanitize_channel_name(raid_details)
     raid_channel = await Squirtudo.create_channel(message.server, raid_channel_name, *message.channel.overwrites)
@@ -2158,7 +2132,7 @@ async def _raidegg(message):
         await Squirtudo.send_message(message.channel, _("Give more details when reporting! Use at least: **!raidegg <level> <location>**. Type **!help** raidegg for more info."))
         return
 
-    raid_gmaps_link = create_gmaps_query(raid_details, message.channel)
+    raid_gmaps_link = getGymLink.getLink(raid_details)
 
     if egg_level > 5 or egg_level == 0:
         await Squirtudo.send_message(message.channel, _("Raid egg levels are only from 1-5!"))
@@ -2464,7 +2438,7 @@ async def _exraid(ctx):
         return
     raid_details = " ".join(exraid_split)
     raid_details = raid_details.strip()
-    raid_gmaps_link = create_gmaps_query(raid_details, message.channel)
+    raid_gmaps_link = getGymLink.getLink(raid_details)
     egg_info = raid_info['raid_eggs']['EX']
     egg_img = egg_info['egg_img']
     boss_list = []
@@ -2861,7 +2835,7 @@ async def location(ctx):
             newembed.add_field(name=field['name'], value=field['value'], inline=field['inline'])
         newembed.set_footer(text=oldembed['footer']['text'], icon_url=oldembed['footer']['icon_url'])
         newembed.set_thumbnail(url=oldembed['thumbnail']['url'])
-        locationmsg = await Squirtudo.send_message(channel, content = _("Here's the current location for the raid!\nDetails: {location}").format(location = location), embed = newembed)
+        locationmsg = await Squirtudo.send_message(channel, content = _("Link to {location}: <{url}>").format(location = location,url=locurl))
         await asyncio.sleep(60)
         await Squirtudo.delete_message(locationmsg)
 
@@ -2885,7 +2859,7 @@ async def new(ctx):
         report_city = report_channel.name
 
         details = " ".join(location_split)
-        newloc = create_gmaps_query(details, report_channel)
+        newloc = getGymLink.getLink(details)
         oldraidmsg = await Squirtudo.get_message(message.channel, server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidmessage'])
         oldreportmsg = await Squirtudo.get_message(report_channel, server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidreport'])
         oldembed = oldraidmsg.embeds[0]
@@ -2901,7 +2875,7 @@ async def new(ctx):
             if trainer_dict[trainer]['status']=='omw':
                 user = message.server.get_member(trainer)
                 otw_list.append(user.mention)
-        await Squirtudo.send_message(message.channel, content = _("Someone has suggested a different location for the raid! Trainers **{trainer_list}**: make sure you are headed to the right place!").format(trainer_list=", ".join(otw_list)), embed = newembed)
+        await Squirtudo.send_message(message.channel, content = _("Someone has suggested a different location for the raid! Trainers **{}**: make sure you are headed to the right place! Link to {}: <{}>").format(", ".join(otw_list),details,newloc))
         rc_d=server_dict[message.server.id]['raidchannel_dict'][message.channel.id]
         rc_d['address']=details
         new_details=""

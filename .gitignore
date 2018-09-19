@@ -7,3 +7,4 @@ data/serverdict
 logs/meowth.log
 __pychache__/
 *.py[cod]
+squirtudo/tools/*.json
