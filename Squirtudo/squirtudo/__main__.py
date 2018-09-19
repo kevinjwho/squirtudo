@@ -281,7 +281,7 @@ def create_gmaps_query(details, channel):
 
 # Given a User, check that it is Squirtudo's master
 def check_master(user):
-    return str(user) == config['master']
+    return 																											str(user) == config['master']
 
 def check_server_owner(user, server):
     return str(user) == str(server.owner)
@@ -1455,7 +1455,7 @@ async def reload_json(ctx):
     load_config()
     await Squirtudo.add_reaction(ctx.message, '✅')
 
-@Squirtudo.command(pass_context=True)
+@Squirtudo.command(pass_context=True,aliases=["clear","clr","cs"])
 @commands.has_permissions(manage_roles=True)
 @checks.raidchannel()
 async def clearstatus(ctx):
@@ -2068,32 +2068,11 @@ async def _raid(message):
 
     raidmsg = _("""{pokemon} raid reported by {member} in {citychannel}! Details: {location_details}. Coordinate here!
 
-**Status Updates**
-*Interested*: `!interested, !i, !maybe, !m`
-*Coming*: `!coming, !c`
-*Here*: `!here, !h`
-*Cancel*: `!cancel, !out`
-Bringing 2 extra people/accounts: `!coming 3`
+Check out {tutorial} for help with commands.
 
-**List Access by Status**
-*All*: `!list, !l`
-*Teams*: `!list teams, !list t, !l t`
-*Interested*: `!list interested, !list i, !l i`
-*Coming*: `!list coming, !list c, !l c`
-*Here*: `!list here, !list h, !l h`
+**__IMPORTANT__**: Message **!go** when the raid is beginning to clear the raid's start time and `here` list.
 
-**Set Timer Commands**
-*Time until hatch*: `!timerset minutes, !settimer minutes`
-*Start Time*: `!starttime HH:MM AM/PM, !st HH:MM AM/PM, !startat HH:MM AM/PM`
-(can omit AM/PM and use 24-hour time)
-
-**Access Timer Commands**
-*Time until hatch*: `!timer`
-*Start Time*: `!starttime, !st`
-
-**__IMPORTANT__**: Message **!starting** when the raid is beginning to clear the raid's 'here' list.
-
-This channel will be deleted five minutes after the timer expires.""").format(pokemon=raid, member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details)
+This channel will be deleted five minutes after the timer expires.""").format(pokemon=raid, member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details,tutorial=Squirtudo.get_channel('406875985938743296').mention)
     raidmessage = await Squirtudo.send_message(raid_channel, content = raidmsg, embed=raid_embed)
     await Squirtudo.pin_message(raidmessage)
 
@@ -2213,32 +2192,11 @@ async def _raidegg(message):
 
         raidmsg = _("""Level {level} raid egg reported by {member} in {citychannel}! Details: {location_details}. Coordinate here!
 
-**Status Updates**
-*Interested*: `!interested, !i, !maybe, !m`
-*Coming*: `!coming, !c`
-*Here*: `!here, !h`
-*Cancel*: `!cancel, !out`
-Bringing 2 extra people/accounts: `!coming 3`
+Check out {tutorial} for help with commands.
 
-**List Access by Status**
-*All*: `!list, !l`
-*Teams*: `!list teams, !list t, !l t`
-*Interested*: `!list interested, !list i, !l i`
-*Coming*: `!list coming, !list c, !l c`
-*Here*: `!list here, !list h, !l h`
+**__IMPORTANT__**: Message **!go** when the raid is beginning to clear the raid's start time and `here` list.
 
-**Set Timer Commands**
-*Time until hatch*: `!timerset minutes, !settimer minutes`
-*Start Time*: `!starttime HH:MM AM/PM, !st HH:MM AM/PM, !startat HH:MM AM/PM`
-(can omit AM/PM and use 24-hour time)
-
-**Access Timer Commands**
-*Time until hatch*: `!timer`
-*Start Time*: `!starttime, !st`
-
-**__IMPORTANT__**: Message **!starting** when the raid is beginning to clear the raid's 'here' list.
-
-This channel will be deleted five minutes after the timer expires.""").format(level=egg_level, member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details)
+This channel will be deleted five minutes after the timer expires.""").format(level=egg_level, member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details,tutorial=Squirtudo.get_channel('406875985938743296').mention)
         raidmessage = await Squirtudo.send_message(raid_channel, content = raidmsg, embed=raid_embed)
         await Squirtudo.pin_message(raidmessage)
 
@@ -2369,63 +2327,21 @@ async def _eggtoraid(entered_raid, raid_channel):
         raidreportcontent = _("The egg has hatched into a {pokemon} raid! Details: {location_details}. Coordinate in {raid_channel}").format(pokemon=entered_raid.capitalize(), location_details=egg_address, raid_channel=raid_channel.mention)
         raidmsg = _("""The egg reported by {member} in {citychannel} hatched into a {pokemon} raid! Details: {location_details}. Coordinate here!
 
-**Status Updates**
-*Interested*: `!interested, !i, !maybe, !m`
-*Coming*: `!coming, !c`
-*Here*: `!here, !h`
-*Cancel*: `!cancel, !out`
-Bringing 2 extra people/accounts: `!coming 3`
+Check out {tutorial} for help with commands.
 
-**List Access by Status**
-*All*: `!list, !l`
-*Teams*: `!list teams, !list t, !l t`
-*Interested*: `!list interested, !list i, !l i`
-*Coming*: `!list coming, !list c, !l c`
-*Here*: `!list here, !list h, !l h`
+**__IMPORTANT__**: Message **!go** when the raid is beginning to clear the raid's start time and `here` list.
 
-**Set Timer Commands**
-*Time until hatch*: `!timerset minutes, !settimer minutes`
-*Start Time*: `!starttime HH:MM AM/PM, !st HH:MM AM/PM, !startat HH:MM AM/PM`
-(can omit AM/PM and use 24-hour time)
-
-**Access Timer Commands**
-*Time until hatch*: `!timer`
-*Start Time*: `!starttime, !st`
-
-**__IMPORTANT__**: Message **!starting** when the raid is beginning to clear the raid's 'here' list.
-
-This channel will be deleted five minutes after the timer expires.""").format(member=raid_messageauthor.mention, citychannel=reportcitychannel.mention if reportcitychannel else "UNKNOWN", pokemon=entered_raid.capitalize(), location_details=egg_address)
+This channel will be deleted five minutes after the timer expires.""").format(member=raid_messageauthor.mention, citychannel=reportcitychannel.mention if reportcitychannel else "UNKNOWN", pokemon=entered_raid.capitalize(), location_details=egg_address,tutorial=Squirtudo.get_channel('406875985938743296').mention)
     elif egglevel == "EX":
         hatchtype = "exraid"
         raidreportcontent = _("The EX egg has hatched into a {pokemon} raid! Details: {location_details}. Use the **!invite** command to gain access and coordinate in {raid_channel}").format(pokemon=entered_raid.capitalize(), location_details=egg_address, raid_channel=raid_channel.mention)
         raidmsg = _("""{pokemon} EX raid reported by {member} in {citychannel}! Details: {location_details}. Coordinate here after using **!invite** to gain access!
 
-**Status Updates**
-*Interested*: `!interested, !i, !maybe, !m`
-*Coming*: `!coming, !c`
-*Here*: `!here, !h`
-*Cancel*: `!cancel, !out`
-Bringing 2 extra people/accounts: `!coming 3`
+Check out {tutorial} for help with commands.
 
-**List Access by Status**
-*All*: `!list, !l`
-*Teams*: `!list teams, !list t, !l t`
-*Interested*: `!list interested, !list i, !l i`
-*Coming*: `!list coming, !list c, !l c`
-*Here*: `!list here, !list h, !l h`
+**__IMPORTANT__**: Message **!go** when the raid is beginning to clear the raid's start time and `here` list.
 
-**Set Timer Commands**
-*Time until hatch*: `!timerset minutes, !settimer minutes`
-*Start Time*: `!starttime HH:MM AM/PM, !st HH:MM AM/PM, !startat HH:MM AM/PM`
-(can omit AM/PM and use 24-hour time)
-
-**Access Timer Commands**
-*Time until hatch*: `!timer`
-*Start Time*: `!starttime, !st`
-
-**__IMPORTANT__**: Message **!starting** when the raid is beginning to clear the raid's 'here' list.
-
-This channel will be deleted five minutes after the timer expires.""").format(pokemon=entered_raid.capitalize(), member=raid_messageauthor.mention, citychannel=reportcitychannel.mention, location_details=egg_address)
+This channel will be deleted five minutes after the timer expires.""").format(pokemon=entered_raid.capitalize(), member=raid_messageauthor.mention, citychannel=reportcitychannel.mention, location_details=egg_address,tutorial=Squirtudo.get_channel('406875985938743296').mention)
     entered_raid = get_name(entered_raid).lower() if entered_raid.isdigit() else entered_raid.lower()
     rgx = r"[^a-zA-Z0-9]"
     pkmn_match = next((p for p in pkmn_info['pokemon_list'] if re.sub(rgx, "", p) == re.sub(rgx, "", entered_raid)), None)
@@ -2584,32 +2500,11 @@ async def _exraid(ctx):
 
     raidmsg = _("""EX raid reported by {member} in {citychannel}! Details: {location_details}. Coordinate here after using **!invite** to gain access!
 
-**Status Updates**
-*Interested*: `!interested, !i, !maybe, !m`
-*Coming*: `!coming, !c`
-*Here*: `!here, !h`
-*Cancel*: `!cancel, !out`
-Bringing 2 extra people/accounts: `!coming 3`
+Check out {tutorial} for help with commands.
 
-**List Access by Status**
-*All*: `!list, !l`
-*Teams*: `!list teams, !list t, !l t`
-*Interested*: `!list interested, !list i, !l i`
-*Coming*: `!list coming, !list c, !l c`
-*Here*: `!list here, !list h, !l h`
+**__IMPORTANT__**: Message **!go** when the raid is beginning to clear the raid's start time and `here` list.
 
-**Set Timer Commands**
-*Time until hatch*: `!timerset minutes, !settimer minutes`
-*Start Time*: `!starttime HH:MM AM/PM, !st HH:MM AM/PM, !startat HH:MM AM/PM`
-(can omit AM/PM and use 24-hour time)
-
-**Access Timer Commands**
-*Time until hatch*: `!timer`
-*Start Time*: `!starttime, !st`
-
-**__IMPORTANT__**: Message **!starting** when the raid is beginning to clear the raid's 'here' list.
-
-This channel will be deleted five minutes after the timer expires.""").format(member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details)
+This channel will be deleted five minutes after the timer expires.""").format(member=message.author.mention, citychannel=message.channel.mention, location_details=raid_details,tutorial=Squirtudo.get_channel('406875985938743296').mention)
     raidmessage = await Squirtudo.send_message(raid_channel, content = raidmsg, embed=raid_embed)
     await Squirtudo.pin_message(raidmessage)
 
@@ -2944,7 +2839,7 @@ async def starttime(ctx):
         except KeyError:
             await Squirtudo.send_message(channel, _("No start time has been set, set one with **!starttime HH:MM AM/PM**! (You can also omit AM/PM and use 24-hour time!)"))
 
-@Squirtudo.group(pass_context=True)
+@Squirtudo.group(pass_context=True,aliases=["loc","where","map","maps"])
 @checks.activeraidchannel()
 async def location(ctx):
     """Get raid location.
@@ -3722,7 +3617,7 @@ async def _cancel(channel, author):
     t_dict['count'] = 1
     await _edit_party(channel, author)
 
-@Squirtudo.command(pass_context=True,aliases=["goin","go","start"])
+@Squirtudo.command(pass_context=True,aliases=["goin","go"])
 @checks.activeraidchannel()
 async def starting(ctx):
     """Signal that a raid is starting.
