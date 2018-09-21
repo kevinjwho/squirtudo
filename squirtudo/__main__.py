@@ -3825,19 +3825,12 @@ async def list(ctx):
                 except KeyError:
                     pass
                 rc_d = server_dict[server.id]['raidchannel_dict'][channel.id]
-                if rc_d['type'] == 'egg' and rc_d['pokemon'] == '':
-                    listmsg += "\n" + bulletpoint + await _interest(ctx)
-                    listmsg += "\n" + bulletpoint
-                    listmsg += await print_raid_timer(channel)
-                    if starttime and starttime > now:
-                        listmsg += "\nThe next group will be starting at **{}**".format(starttime.strftime("%I:%M %p (%H:%M)"))
-                else:
-                    listmsg += "\n" + bulletpoint + await _interest(ctx)
-                    listmsg += "\n" + bulletpoint + await _otw(ctx)
-                    listmsg += "\n" + bulletpoint + await _waiting(ctx)
-                    listmsg += "\n" + bulletpoint + await print_raid_timer(channel)
-                    if starttime and starttime > now:
-                        listmsg += "\nThe next group will be starting at **{}**".format(starttime.strftime("%I:%M %p (%H:%M)"))
+                listmsg += "\n" + bulletpoint + await _interest(ctx)
+                listmsg += "\n" + bulletpoint + await _otw(ctx)
+                listmsg += "\n" + bulletpoint + await _waiting(ctx)
+                listmsg += "\n" + bulletpoint + await print_raid_timer(channel)
+                if starttime and starttime > now:
+                    listmsg += "\nThe next group will be starting at **{}**".format(starttime.strftime("%I:%M %p (%H:%M)"))
                 await Squirtudo.send_message(channel, listmsg)
                 return
         else:
