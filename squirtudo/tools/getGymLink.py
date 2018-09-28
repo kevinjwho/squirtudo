@@ -48,6 +48,8 @@ def getLink(userinput):
     bestMatch = ""
     matchedName = ""
     actualGym = pd.DataFrame()
+	
+    userinput = userinput.lower()
 
     for gymName in gymPotentialNames:
         ratio = fuzz.partial_ratio(userinput,gymName)

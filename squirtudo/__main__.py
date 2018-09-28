@@ -3205,9 +3205,9 @@ async def _maybe(channel, author, count, party):
             allunknown = count
         party = [allblue, allred, allyellow, allunknown]
     if count == 1:
-        await Squirtudo.send_message(channel, _("{member} is interested!").format(member=author.display_name))
+        imsg = await Squirtudo.send_message(channel, _("{member} is interested!").format(member=author.display_name))
     else:
-        await Squirtudo.send_message(channel, _("{member} is interested with a total of {trainer_count} trainers! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}").format(member=author.display_name, trainer_count=count, blue_emoji=parse_emoji(channel.server, config['team_dict']['mystic']),mystic=party[0],red_emoji=parse_emoji(channel.server, config['team_dict']['valor']),valor=party[1], instinct=party[2], yellow_emoji=parse_emoji(channel.server,config['team_dict']['instinct']), unknown=party[3]))
+        imsg = await Squirtudo.send_message(channel, _("{member} is interested with a total of {trainer_count} trainers! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}").format(member=author.display_name, trainer_count=count, blue_emoji=parse_emoji(channel.server, config['team_dict']['mystic']),mystic=party[0],red_emoji=parse_emoji(channel.server, config['team_dict']['valor']),valor=party[1], instinct=party[2], yellow_emoji=parse_emoji(channel.server,config['team_dict']['instinct']), unknown=party[3]))
 
     # Add trainer name to trainer list
     if author.id not in server_dict[channel.server.id]['raidchannel_dict'][channel.id]['trainer_dict']:
@@ -3217,6 +3217,8 @@ async def _maybe(channel, author, count, party):
     trainer_dict[author.id]['party'] = party
     await _edit_party(channel, author)
     server_dict[channel.server.id]['raidchannel_dict'][channel.id]['trainer_dict'] = trainer_dict
+
+
 
 @Squirtudo.command(pass_context=True,aliases=["c"])
 @checks.activeraidchannel()
@@ -3255,6 +3257,7 @@ async def coming(ctx, *, teamcounts: str = None):
         partylist = result[1]
         await _coming(ctx.message.channel, ctx.message.author, count, partylist)
 
+
 async def _coming(channel, author, count, party):
     allblue = 0
     allred = 0
@@ -3288,6 +3291,8 @@ async def _coming(channel, author, count, party):
     trainer_dict[author.id]['party'] = party
     await _edit_party(channel, author)
     server_dict[channel.server.id]['raidchannel_dict'][channel.id]['trainer_dict'] = trainer_dict
+
+
 
 @Squirtudo.command(pass_context=True,aliases=["h"])
 @checks.activeraidchannel()
@@ -3324,6 +3329,7 @@ async def here(ctx, *, teamcounts: str = None):
         count = result[0]
         partylist = result[1]
         await _here(ctx.message.channel, ctx.message.author, count, partylist)
+
 
 async def _here(channel, author, count, party):
     lobbymsg = ""
@@ -3363,6 +3369,8 @@ async def _here(channel, author, count, party):
     trainer_dict[author.id]['party'] = party
     await _edit_party(channel, author)
     server_dict[channel.server.id]['raidchannel_dict'][channel.id]['trainer_dict'] = trainer_dict
+
+
 
 async def _party_status(ctx, total, teamcounts):
     channel = ctx.message.channel
@@ -3558,6 +3566,7 @@ async def cancel(ctx):
     from the list of trainers who are "otw" or "here"."""
     await _cancel(ctx.message.channel, ctx.message.author)
 
+
 async def _cancel(channel, author):
     server = channel.server
     try:
@@ -3590,6 +3599,8 @@ async def _cancel(channel, author):
     t_dict['party'] = [0,0,0,0]
     t_dict['count'] = 1
     await _edit_party(channel, author)
+
+
 
 @Squirtudo.command(pass_context=True,aliases=["goin","go"])
 @checks.activeraidchannel()
@@ -4001,7 +4012,7 @@ async def _interest(ctx, tag=False):
             maybe_list.append(user.mention)
     if ctx_maybecount > 0:
         if now.time() >= datetime.time(5,0) and now.time() <= datetime.time(21,0) and tag == True:
-            maybe_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
+            maybe_exstr = _(": {trainer_list}").format(trainer_list=", ".join(maybe_list))
         else:
             maybe_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
     listmsg = (_(" {trainer_count} interested{including_string}").format(trainer_count=str(ctx_maybecount), including_string=maybe_exstr))
@@ -4046,7 +4057,7 @@ async def _otw(ctx, tag=False):
             otw_list.append(user.mention)
     if ctx_omwcount > 0:
         if now.time() >= datetime.time(5,0) and now.time() <= datetime.time(21,0) and tag == True:
-            otw_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
+            otw_exstr = _(": {trainer_list}").format(trainer_list=", ".join(otw_list))
         else:
             otw_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
     listmsg = (_(" {trainer_count} coming{including_string}").format(trainer_count=str(ctx_omwcount), including_string=otw_exstr))
@@ -4090,7 +4101,7 @@ async def _waiting(ctx, tag=False):
             waiting_list.append(user.mention)
     if ctx_waitingcount > 0:
         if now.time() >= datetime.time(5,0) and now.time() <= datetime.time(21,0) and tag == True:
-            waiting_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
+            waiting_exstr = _(": {trainer_list}").format(trainer_list=", ".join(waiting_list))
         else:
             waiting_exstr = _(": {trainer_list}").format(trainer_list=", ".join(name_list))
     listmsg = (_(" {trainer_count} here{including_string}").format(trainer_count=str(ctx_waitingcount), including_string=waiting_exstr))
@@ -4241,6 +4252,137 @@ async def tags(ctx):
                     listmsg += "\nThe next group will be starting at **{}**".format(starttime.strftime("%I:%M %p (%H:%M)"))
             await Squirtudo.send_message(channel, listmsg)
             return
+
+
+@Squirtudo.group(pass_context=True)
+@checks.activeraidchannel()
+async def tag(ctx):
+    """Tag all users in active raid channel"""
+    if ctx.invoked_subcommand is None:
+        server = ctx.message.server
+        channel = ctx.message.channel
+        await Squirtudo.send_message(channel, "inside if, created channel")
+        msgcontent = ctx.message.content.split()
+        des_msgcontent = " ".join(msgcontent[2:])
+        tagmsg = ""
+        await Squirtudo.send_message(channel, "tag msg init")
+
+        i_list = await _tag_interest(ctx)
+        i_split = i_list.split(", ")
+        c_list = await _tag_coming(ctx)
+        c_split = c_list.split(", ")
+        h_list = await _tag_here(ctx)
+        h_split = h_list.split(", ")
+        full_list = (i_split + c_split + h_split)
+        full_list.remove("")
+        full_list = ", ".join(full_list)
+		
+        tagmsg += full_list +"\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+
+        await Squirtudo.send_message(channel, tagmsg)        
+        
+
+@tag.command(pass_context=True,aliases=["i"])
+@checks.activeraidchannel()
+async def interested(ctx):
+    """Tag the users who are interested in the raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += await _tag_interest(ctx)
+    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+async def _tag_interest(ctx):
+    ctx_maybecount = 0
+    trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict:
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status'] == "maybe" and memberexists:
+            ctx_maybecount += trainer_dict[trainer]['count']
+
+    maybe_exstr = ""
+    maybe_list = []
+    for trainer in trainer_dict.keys():
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status']=='maybe' and memberexists:
+            user = ctx.message.server.get_member(trainer)
+            maybe_list.append(user.mention)
+    if ctx_maybecount > 0:
+        maybe_exstr = _("{trainer_list}").format(trainer_list=", ".join(maybe_list))
+    else:
+        return ""
+
+    tag_i_msg = (_("{list_string}").format(list_string=maybe_exstr))
+    return tag_i_msg
+
+@tag.command(pass_context=True,aliases=["c"])
+@checks.activeraidchannel()
+async def coming(ctx):
+    """Tag the users who are coming to the raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += await _tag_coming(ctx)
+    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+async def _tag_coming(ctx):
+    ctx_comingcount = 0
+    trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict:
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status'] == "omw" and memberexists:
+            ctx_comingcount += trainer_dict[trainer]['count']
+
+    coming_exstr = ""
+    coming_list = []
+    for trainer in trainer_dict.keys():
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status']=='omw' and memberexists:
+            user = ctx.message.server.get_member(trainer)
+            coming_list.append(user.mention)
+    if ctx_comingcount > 0:
+        coming_exstr = _("{trainer_list}").format(trainer_list=", ".join(coming_list))
+    else:
+        return ""
+
+    tag_c_msg = (_("{list_string}").format(list_string=coming_exstr))
+    return tag_c_msg
+
+@tag.command(pass_context=True,aliases=["h"])
+@checks.activeraidchannel()
+async def here(ctx):
+    """Tag the users who are here at the raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += await _tag_here(ctx)
+    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+async def _tag_here(ctx):
+    ctx_herecount = 0
+    trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict:
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status'] == "waiting" and memberexists:
+            ctx_herecount += trainer_dict[trainer]['count']
+
+    here_exstr = ""
+    here_list = []
+    for trainer in trainer_dict.keys():
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status']=='waiting' and memberexists:
+            user = ctx.message.server.get_member(trainer)
+            here_list.append(user.mention)
+    if ctx_herecount > 0:
+        here_exstr = _("{trainer_list}").format(trainer_list=", ".join(here_list))
+    else:
+        return ""
+
+    tag_h_msg = (_("{list_string}").format(list_string=here_exstr))
+    return tag_h_msg
 
 @Squirtudo.command(pass_context=True,aliases=["ranges"])
 @checks.raidchannel()
