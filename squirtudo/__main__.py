@@ -4261,11 +4261,9 @@ async def tag(ctx):
     if ctx.invoked_subcommand is None:
         server = ctx.message.server
         channel = ctx.message.channel
-        await Squirtudo.send_message(channel, "inside if, created channel")
         msgcontent = ctx.message.content.split()
-        des_msgcontent = " ".join(msgcontent[2:])
+        des_msgcontent = " ".join(msgcontent[1:])
         tagmsg = ""
-        await Squirtudo.send_message(channel, "tag msg init")
 
         i_list = await _tag_interest(ctx)
         i_split = i_list.split(", ")
@@ -4274,7 +4272,7 @@ async def tag(ctx):
         h_list = await _tag_here(ctx)
         h_split = h_list.split(", ")
         full_list = (i_split + c_split + h_split)
-        full_list.remove("")
+        full_list = filter(None, full_list)
         full_list = ", ".join(full_list)
 		
         tagmsg += full_list +"\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
