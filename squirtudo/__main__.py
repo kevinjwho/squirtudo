@@ -4275,7 +4275,7 @@ async def tag(ctx):
         full_list = filter(None, full_list)
         full_list = ", ".join(full_list)
 		
-        tagmsg += full_list +"\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+        tagmsg += ctx.message.author.mention + " says: " + des_msgcontent + "\n\n" + full_list
 
         await Squirtudo.send_message(channel, tagmsg)        
         
@@ -4287,8 +4287,8 @@ async def interested(ctx):
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += await _tag_interest(ctx)
-    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_interest(ctx)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
 async def _tag_interest(ctx):
@@ -4321,8 +4321,8 @@ async def coming(ctx):
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += await _tag_coming(ctx)
-    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_coming(ctx)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
 async def _tag_coming(ctx):
@@ -4355,8 +4355,8 @@ async def here(ctx):
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += await _tag_here(ctx)
-    tagmsg += "\n\n" + ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_here(ctx)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
 async def _tag_here(ctx):
