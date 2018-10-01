@@ -3602,7 +3602,7 @@ async def _cancel(channel, author):
 
 
 
-@Squirtudo.command(pass_context=True,aliases=["goin","go"])
+@Squirtudo.group(pass_context=True,aliases=["goin","go"])
 @checks.activeraidchannel()
 async def starting(ctx):
     """Signal that a raid is starting.
@@ -3611,21 +3611,78 @@ async def starting(ctx):
     Works only in raid channels. Sends a message and clears the waiting list. Users who are waiting
     for a second group must reannounce with the :here: emoji or !here."""
 
+    if ctx.invoked_subcommand is None:
+        ctx_startinglist = []
+        id_startinglist = []
+        
+        trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+        
+        # Add all waiting trainers to the starting list
+        for trainer in trainer_dict:
+            if trainer_dict[trainer]['status'] == "waiting":
+                trainer_dict[trainer]['status'] =  "lobby"
+                user = ctx.message.server.get_member(trainer)
+                ctx_startinglist.append(user.mention)
+                id_startinglist.append(trainer)
+        server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'] = trainer_dict
+        if len(ctx_startinglist) == 0:
+            starting_str = _("How can you start when there's no one waiting at this raid!?")
+            await Squirtudo.send_message(ctx.message.channel, starting_str)
+            return
+        try:
+            starttime = server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']
+            timestr = " to start at **{}** ".format(starttime.strftime("%I:%M %p (%H:%M)"))
+            del server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']
+        except KeyError:
+            starttime = False
+            timestr = " "
+        starting_str = _("The group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**").format(timestr=timestr,trainer_list=", ".join(ctx_startinglist), here_emoji=parse_emoji(ctx.message.server, config['here_id']))
+        server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['lobby'] = time.time() + 120
+        if starttime:
+            starting_str += "\n\nThe start time has also been cleared, new groups can set a new start time wtih **!starttime HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)."
+        await Squirtudo.send_message(ctx.message.channel, starting_str)
+        await asyncio.sleep(120)
+        if 'lobby' not in server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id] or time.time() < server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id].get('lobby'):
+            return
+        ctx_lobbycount = 0
+        trainer_delete_list = []
+        for trainer in trainer_dict:
+            if trainer_dict[trainer]['status'] == "lobby":
+                ctx_lobbycount += trainer_dict[trainer]['count']
+                trainer_delete_list.append(trainer)
+        if ctx_lobbycount > 0:
+            await Squirtudo.send_message(ctx.message.channel, "The group of {count} in the lobby has entered the raid! Wish them luck!".format(count=str(ctx_lobbycount)))
+            if ctx.message.channel.name.startswith("0") or ctx.message.channel.name.startswith("1"):
+                await Squirtudo.edit_channel(ctx.message.channel,name=ctx.message.channel.name[7:])
+        for trainer in trainer_delete_list:
+            del trainer_dict[trainer]
+        try:
+            del server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['lobby']
+        except KeyError:
+            pass
+        await _edit_party(ctx.message.channel, ctx.message.author)
+        server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'] = trainer_dict
+
+@starting.command(pass_context=True, aliases = ["i","y","ins"])
+@checks.activeraidchannel()
+async def instinct(ctx):
+    """Signal to instinct that raid is starting"""
+
     ctx_startinglist = []
     id_startinglist = []
-
+    
     trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
-
+    
     # Add all waiting trainers to the starting list
     for trainer in trainer_dict:
-        if trainer_dict[trainer]['status'] == "waiting":
+        if trainer_dict[trainer]['status'] == "waiting" and trainer_dict[trainer]['party'][2] > 0:
             trainer_dict[trainer]['status'] =  "lobby"
             user = ctx.message.server.get_member(trainer)
             ctx_startinglist.append(user.mention)
             id_startinglist.append(trainer)
     server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'] = trainer_dict
     if len(ctx_startinglist) == 0:
-        starting_str = _("How can you start when there's no one waiting at this raid!?")
+        starting_str = _("How can you start when there's no one Instinct waiting at this raid!?")
         await Squirtudo.send_message(ctx.message.channel, starting_str)
         return
     try:
@@ -3635,7 +3692,7 @@ async def starting(ctx):
     except KeyError:
         starttime = False
         timestr = " "
-    starting_str = _("The group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**").format(timestr=timestr,trainer_list=", ".join(ctx_startinglist), here_emoji=parse_emoji(ctx.message.server, config['here_id']))
+    starting_str = _("The Instinct group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**").format(timestr=timestr,trainer_list=", ".join(ctx_startinglist), here_emoji=parse_emoji(ctx.message.server, config['here_id']))
     server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['lobby'] = time.time() + 120
     if starttime:
         starting_str += "\n\nThe start time has also been cleared, new groups can set a new start time wtih **!starttime HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)."
@@ -3646,7 +3703,7 @@ async def starting(ctx):
     ctx_lobbycount = 0
     trainer_delete_list = []
     for trainer in trainer_dict:
-        if trainer_dict[trainer]['status'] == "lobby":
+        if trainer_dict[trainer]['status'] == "lobby" and trainer_dict[trainer]['party'][2] > 0:
             ctx_lobbycount += trainer_dict[trainer]['count']
             trainer_delete_list.append(trainer)
     if ctx_lobbycount > 0:
@@ -3660,7 +3717,7 @@ async def starting(ctx):
     except KeyError:
         pass
     await _edit_party(ctx.message.channel, ctx.message.author)
-    server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'] = trainer_dict
+    server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'] = trainer_dict    
 
 @Squirtudo.command(pass_context=True)
 @checks.activeraidchannel()
@@ -3840,7 +3897,7 @@ async def list(ctx):
                 listmsg += "\n" + bulletpoint + await _otw(ctx)
                 listmsg += "\n" + bulletpoint + await _waiting(ctx)
                 listmsg += "\n" + bulletpoint + await print_raid_timer(channel)
-                if starttime and starttime > now:
+                if starttime:
                     listmsg += "\nThe next group will be starting at **{}**".format(starttime.strftime("%I:%M %p (%H:%M)"))
                 await Squirtudo.send_message(channel, listmsg)
                 return
@@ -4149,7 +4206,7 @@ async def _lobbylist(ctx, tag=False):
     listmsg = (_(" {trainer_count} in the lobby{including_string}!").format(trainer_count=str(ctx_lobbycount), including_string=lobby_exstr))
     return listmsg
 
-@list.command(pass_context=True, aliases=["team","t"])
+@list.group(pass_context=True, aliases=["team","t"])
 @checks.activeraidchannel()
 async def teams(ctx):
     """List the teams for the users that have RSVP'd to a raid.
@@ -4213,6 +4270,83 @@ async def _teamlist(ctx):
     else:
         listmsg = _(" Nobody has updated their status!")
     return listmsg
+
+@list.command(pass_context=True, aliases=["mys","blue","b"])
+@checks.activeraidchannel()
+async def mystic(ctx):
+    """Lists team Mystic statuses"""
+    listmsg = ""
+    listmsg += parse_emoji(ctx.message.server, config['team_dict']['mystic']) + "__**MYSTIC LIST**__" + parse_emoji(ctx.message.server, config['team_dict']['mystic'])
+    listmsg += await _listteam(ctx,0)
+    await Squirtudo.send_message(ctx.message.channel, listmsg)
+
+@list.command(pass_context=True, aliases=["val","red","r"])
+@checks.activeraidchannel()
+async def valor(ctx):
+    """Lists team Valor statuses"""
+    listmsg = ""
+    listmsg += parse_emoji(ctx.message.server, config['team_dict']['valor']) + "__**VALOR LIST**__" + parse_emoji(ctx.message.server, config['team_dict']['valor'])
+    listmsg += await _listteam(ctx,1)
+    await Squirtudo.send_message(ctx.message.channel, listmsg)
+
+@list.command(pass_context=True, aliases=["ins","yellow","y"])
+@checks.activeraidchannel()
+async def instinct(ctx):
+    """Lists team Instinct statuses"""
+    listmsg = ""
+    listmsg += parse_emoji(ctx.message.server, config['team_dict']['instinct']) + "__**INSTINCT LIST**__" + parse_emoji(ctx.message.server, config['team_dict']['instinct'])
+    listmsg += await _listteam(ctx,2)
+    await Squirtudo.send_message(ctx.message.channel, listmsg)
+
+async def _listteam(ctx, team):
+    listmsg = " "
+    server = ctx.message.server
+    channel = ctx.message.channel
+    bulletpoint = parse_emoji (ctx.message.server, ":small_blue_diamond:")
+    starttime = False
+    try:
+        starttime = server_dict[server.id]['raidchannel_dict'][channel.id]['starttime']
+    except KeyError:
+        pass
+    message = ctx.message
+    count = 0
+    maybe = 0
+    maybe_list = []
+    maybe_exstr = ""
+    coming = 0
+    coming_list = []
+    coming_exstr = ""
+    waiting = 0
+    waiting_list = []
+    waiting_exstr = ""
+    liststr = ""
+    trainer_dict = copy.deepcopy(server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict.keys():
+        if trainer_dict[trainer]['party'][team] > 0:
+            count += int(trainer_dict[trainer]['party'][team])
+            if trainer_dict[trainer]['status'] == "waiting":
+                waiting += int(trainer_dict[trainer]['party'][team])
+                user = ctx.message.server.get_member(trainer)
+                waiting_list.append("**"+user.display_name+"**")
+                if waiting > 0:
+                    waiting_exstr = _(": {h_list}").format(h_list=", ".join(waiting_list))
+            if trainer_dict[trainer]['status'] == "omw":
+                coming += int(trainer_dict[trainer]['party'][team])
+                user = ctx.message.server.get_member(trainer)
+                coming_list.append("**"+user.display_name+"**")
+                if coming > 0:
+                    coming_exstr = _(": {c_list}").format(c_list=", ".join(coming_list))
+            if trainer_dict[trainer]['status'] == "maybe":
+                maybe += int(trainer_dict[trainer]['party'][team])
+                user = ctx.message.server.get_member(trainer)
+                maybe_list.append("**"+user.display_name+"**")
+                if maybe > 0:
+                    maybe_exstr = _(": {i_list}").format(i_list=", ".join(maybe_list))
+    listmsg += "\n" + bulletpoint + str(maybe) + " interested" + maybe_exstr
+    listmsg += "\n" + bulletpoint + str(coming) + " coming" + coming_exstr
+    listmsg += "\n" + bulletpoint + str(waiting) + " here" + waiting_exstr
+    return listmsg
+
 
 @list.command(pass_context=True)
 @checks.activeraidchannel()
@@ -4381,6 +4515,63 @@ async def _tag_here(ctx):
 
     tag_h_msg = (_("{list_string}").format(list_string=here_exstr))
     return tag_h_msg
+
+@tag.command(pass_context=True,aliases=["mys","blue","b"])
+@checks.activeraidchannel()
+async def mystic(ctx):
+    """Tag Mystic users looking to do this raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_team(ctx,0)
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+@tag.command(pass_context=True,aliases=["val","red","r"])
+@checks.activeraidchannel()
+async def valor(ctx):
+    """Tag Valor users looking to do this raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_team(ctx,1)
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+@tag.command(pass_context=True,aliases=["ins","yellow","y"])
+@checks.activeraidchannel()
+async def instinct(ctx):
+    """Tag Instinct users looking to do this raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_team(ctx,2)
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+async def _tag_team(ctx, team):
+    ctx_teamcount = 0
+    trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict:
+        memberexists = ctx.message.server.get_member(trainer)
+        if memberexists:
+            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe":
+                ctx_teamcount += trainer_dict[trainer]['party'][team]
+    team_exstr = ""
+    team_list = []
+    for trainer in trainer_dict.keys():
+        memberexists = ctx.message.server.get_member(trainer)
+        if memberexists:
+            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe":
+                if(trainer_dict[trainer]['party'][team] > 0):
+                    user = ctx.message.server.get_member(trainer)
+                    team_list.append(user.mention)
+    if ctx_teamcount > 0:
+        team_exstr = _("{t_list}").format(t_list=", ".join(team_list))
+    else:
+        return ""
+
+    return team_exstr
 
 @Squirtudo.command(pass_context=True,aliases=["ranges"])
 @checks.raidchannel()
