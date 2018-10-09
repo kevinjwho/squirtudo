@@ -4280,7 +4280,7 @@ async def mystic(ctx):
     listmsg += await _listteam(ctx,0)
     await Squirtudo.send_message(ctx.message.channel, listmsg)
 
-@list.command(pass_context=True, aliases=["val","red","r"])
+@list.command(pass_context=True, aliases=["val","red","r"], case_insensitive = True)
 @checks.activeraidchannel()
 async def valor(ctx):
     """Lists team Valor statuses"""
@@ -4395,24 +4395,34 @@ async def tag(ctx):
     if ctx.invoked_subcommand is None:
         server = ctx.message.server
         channel = ctx.message.channel
-        msgcontent = ctx.message.content.split()
-        des_msgcontent = " ".join(msgcontent[1:])
         tagmsg = ""
-
-        i_list = await _tag_interest(ctx)
-        i_split = i_list.split(", ")
-        c_list = await _tag_coming(ctx)
-        c_split = c_list.split(", ")
-        h_list = await _tag_here(ctx)
-        h_split = h_list.split(", ")
-        full_list = (i_split + c_split + h_split)
-        full_list = filter(None, full_list)
-        full_list = ", ".join(full_list)
 		
-        tagmsg += ctx.message.author.mention + " says: " + des_msgcontent + "\n\n" + full_list
+        tagmsg += ctx.message.author.mention + ", use a tag subcommmand. If you want to tag everyone who has set their status, use `!tag all`"
 
         await Squirtudo.send_message(channel, tagmsg)        
         
+@tag.command(pass_context=True)
+@checks.activeraidchannel()
+async def all(ctx):
+    server = ctx.message.server
+    channel = ctx.message.channel
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+
+    i_list = await _tag_interest(ctx)
+    i_split = i_list.split(", ")
+    c_list = await _tag_coming(ctx)
+    c_split = c_list.split(", ")
+    h_list = await _tag_here(ctx)
+    h_split = h_list.split(", ")
+    full_list = (i_split + c_split + h_split)
+    full_list = filter(None, full_list)
+    full_list = ", ".join(full_list)
+	
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent + "\n\n" + full_list
+
+    await Squirtudo.send_message(channel, tagmsg)      
 
 @tag.command(pass_context=True,aliases=["i"])
 @checks.activeraidchannel()
@@ -4516,36 +4526,36 @@ async def _tag_here(ctx):
     tag_h_msg = (_("{list_string}").format(list_string=here_exstr))
     return tag_h_msg
 
-@tag.command(pass_context=True,aliases=["mys","blue","b"])
+@tag.command(pass_context=True,aliases=["mys","blue","b","Mystic","Mys","Blue","B"])
 @checks.activeraidchannel()
 async def mystic(ctx):
     """Tag Mystic users looking to do this raid."""
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says to " + parse_emoji(ctx.message.server, config['team_dict']['mystic']) + ": " + des_msgcontent
     tagmsg += "\n\n" + await _tag_team(ctx,0)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
-@tag.command(pass_context=True,aliases=["val","red","r"])
+@tag.command(pass_context=True,aliases=["val","red","r","Valor","Val","Red","R"])
 @checks.activeraidchannel()
 async def valor(ctx):
     """Tag Valor users looking to do this raid."""
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says to " + parse_emoji(ctx.message.server, config['team_dict']['valor']) + ": " + des_msgcontent
     tagmsg += "\n\n" + await _tag_team(ctx,1)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
-@tag.command(pass_context=True,aliases=["ins","yellow","y"])
+@tag.command(pass_context=True,aliases=["ins","yellow","y","Instinct","Ins","Yellow","Y"])
 @checks.activeraidchannel()
 async def instinct(ctx):
     """Tag Instinct users looking to do this raid."""
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += ctx.message.author.mention + " says to " + parse_emoji(ctx.message.server, config['team_dict']['instinct']) + ": " + des_msgcontent
     tagmsg += "\n\n" + await _tag_team(ctx,2)
     await Squirtudo.send_message(ctx.message.channel, tagmsg)
 
