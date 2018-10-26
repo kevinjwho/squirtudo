@@ -1448,6 +1448,22 @@ async def clearstatus(ctx):
     except KeyError:
         pass
 
+@Squirtudo.command(pass_context=True,aliases=["cst","clearst","clrst"])
+@checks.raidchannel()
+async def clearstarttime(ctx):
+    """Clears raid channel start time.
+
+    Usage: !clearstarttime"""
+    try:
+        if ctx.message.channel.name.startswith("0") or ctx.message.channel.name.startswith("1"):
+            new_channel_name=ctx.message.channel.name[7:]
+            await Squirtudo.edit_channel(ctx.message.channel,name=new_channel_name)
+        if server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']:
+            del server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['starttime']
+        await Squirtudo.send_message(ctx.message.channel,"Start time has been cleared!")
+    except KeyError:
+        pass
+
 @Squirtudo.command(pass_context=True,aliases=["ss"])
 @commands.has_permissions(manage_server=True)
 @checks.raidchannel()
@@ -2593,7 +2609,7 @@ async def print_raid_timer(channel):
 
     return timerstr
 
-@Squirtudo.command(pass_context=True)
+@Squirtudo.command(pass_context=True,aliases=["ts"])
 @checks.raidchannel()
 async def timerset(ctx,timer):
     """Set the remaining duration on a raid.
@@ -2791,14 +2807,48 @@ async def starttime(ctx):
                     await Squirtudo.delete_message(rusure)
                     if now <= start:
                         rc_d['starttime'] = start
-                        await Squirtudo.send_message(channel, _("The current start time has been set to: **{starttime}**").format(starttime=start.strftime("%I:%M %p (%H:%M)")))
+                        server = ctx.message.server
+                        channel = ctx.message.channel
+                        msgcontent = ctx.message.content.split()
+                        des_msgcontent = " ".join(msgcontent[2:])
+                        tagmsg = ""
+                        
+                        i_list = await _tag_interest(ctx)
+                        i_split = i_list.split(", ")
+                        c_list = await _tag_coming(ctx)
+                        c_split = c_list.split(", ")
+                        h_list = await _tag_here(ctx)
+                        h_split = h_list.split(", ")
+                        full_list = (i_split + c_split + h_split)
+                        full_list = filter(None, full_list)
+                        full_list = ", ".join(full_list)
+                        
+                        tagmsg += full_list
+                        await Squirtudo.send_message(channel, _("The current start time has been set to: **{starttime}**\n\n" + tagmsg).format(starttime=start.strftime("%I:%M %p (%H:%M)")))
                         new_name = start.strftime("%I%M%p-")+channel.name[7:]
                         await Squirtudo.edit_channel(channel,name=new_name)
                         return
         else:
             if now <= start:
                 rc_d['starttime'] = start
-                await Squirtudo.send_message(channel, _("The current start time has been set to: **{starttime}**").format(starttime=start.strftime("%I:%M %p (%H:%M)")))
+                server = ctx.message.server
+                channel = ctx.message.channel
+                msgcontent = ctx.message.content.split()
+                des_msgcontent = " ".join(msgcontent[2:])
+                tagmsg = ""
+                
+                i_list = await _tag_interest(ctx)
+                i_split = i_list.split(", ")
+                c_list = await _tag_coming(ctx)
+                c_split = c_list.split(", ")
+                h_list = await _tag_here(ctx)
+                h_split = h_list.split(", ")
+                full_list = (i_split + c_split + h_split)
+                full_list = filter(None, full_list)
+                full_list = ", ".join(full_list)
+                
+                tagmsg += full_list
+                await Squirtudo.send_message(channel, _("The current start time has been set to: **{starttime}**\n\n" + tagmsg).format(starttime=start.strftime("%I:%M %p (%H:%M)")))
                 new_name = start.strftime("%I%M%p-") + channel.name
                 await Squirtudo.edit_channel(channel,name=new_name)
                 return
@@ -2836,8 +2886,6 @@ async def location(ctx):
         newembed.set_footer(text=oldembed['footer']['text'], icon_url=oldembed['footer']['icon_url'])
         newembed.set_thumbnail(url=oldembed['thumbnail']['url'])
         locationmsg = await Squirtudo.send_message(channel, content = _("Link to {location}: <{url}>").format(location = location,url=locurl))
-        await asyncio.sleep(60)
-        await Squirtudo.delete_message(locationmsg)
 
 @location.command(pass_context=True)
 @checks.activeraidchannel()
