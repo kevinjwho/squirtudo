@@ -4480,7 +4480,6 @@ async def nothere(ctx):
     msgcontent = ctx.message.content.split()
     des_msgcontent = " ".join(msgcontent[2:])
     tagmsg = ""
-    blank = ""
 
     i_list = await _tag_interest(ctx)
     i_split = i_list.split(", ")
