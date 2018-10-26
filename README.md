@@ -3,16 +3,6 @@ A Discord helper bot for Pokemon Go communities.
 
 Squirtudo is a Discord bot based off of FoglyOgly's popular Meowth2.0 Bot. https://github.com/FoglyOgly/Meowth
 
-### General Commands:
-
-| Commands | Requirements  | Description |
-| -------- |:-------------:| ------------|
-| **!help** \[command\] | - | Shows bot/command help, with descriptions. |
-| **!about** | - | Shows info about Squirtudo. |
-| **!team** \<team\> | - | Let's users set their team role. |
-| **!welcome** \[@member\] | *Owner Only* | Sends the welcome message to either user or mentioned member. |
-| **!outputlog**  | *Server Manager Only* | Uploads the log file to hastebin and replies with the link. |
-
 ### Raid Commands:
 
 | Commands | Requirements  | Description |
