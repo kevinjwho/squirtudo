@@ -4470,6 +4470,28 @@ async def all(ctx):
 	
     tagmsg += ctx.message.author.mention + " says: " + des_msgcontent + "\n\n" + full_list
 
+    await Squirtudo.send_message(channel, tagmsg)
+
+@tag.command(pass_context=True,aliases=["nh"])
+@checks.activeraidchannel()
+async def nothere(ctx):
+    server = ctx.message.server
+    channel = ctx.message.channel
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    blank = ""
+
+    i_list = await _tag_interest(ctx)
+    i_split = i_list.split(", ")
+    c_list = await _tag_coming(ctx)
+    c_split = c_list.split(", ")
+    full_list = (i_split + c_split)
+    full_list = filter(None, full_list)
+    full_list = ", ".join(full_list)
+	
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent + "\n\n" + full_list
+
     await Squirtudo.send_message(channel, tagmsg)      
 
 @tag.command(pass_context=True,aliases=["i"])
