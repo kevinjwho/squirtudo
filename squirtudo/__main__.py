@@ -4634,14 +4634,14 @@ async def _tag_team(ctx, team):
     for trainer in trainer_dict:
         memberexists = ctx.message.server.get_member(trainer)
         if memberexists:
-            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe":
+            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe" or trainer_dict[trainer]['status'] == "lobby":
                 ctx_teamcount += trainer_dict[trainer]['party'][team]
     team_exstr = ""
     team_list = []
     for trainer in trainer_dict.keys():
         memberexists = ctx.message.server.get_member(trainer)
         if memberexists:
-            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe":
+            if trainer_dict[trainer]['status'] == "waiting" or trainer_dict[trainer]['status'] == "omw" or trainer_dict[trainer]['status'] == "maybe" or trainer_dict[trainer]['status'] == "lobby":
                 if(trainer_dict[trainer]['party'][team] > 0):
                     user = ctx.message.server.get_member(trainer)
                     team_list.append(user.mention)
