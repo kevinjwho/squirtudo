@@ -4464,7 +4464,9 @@ async def all(ctx):
     c_split = c_list.split(", ")
     h_list = await _tag_here(ctx)
     h_split = h_list.split(", ")
-    full_list = (i_split + c_split + h_split)
+    l_list = await _tag_lobby(ctx)
+    l_split = l_list.split(", ")
+    full_list = (i_split + c_split + h_split + l_split)
     full_list = filter(None, full_list)
     full_list = ", ".join(full_list)
 	
@@ -4595,6 +4597,40 @@ async def _tag_here(ctx):
     tag_h_msg = (_("{list_string}").format(list_string=here_exstr))
     return tag_h_msg
 
+@tag.command(pass_context=True,aliases=["l"])
+@checks.activeraidchannel()
+async def lobby(ctx):
+    """Tag the users who are in the lobby of the raid."""
+    msgcontent = ctx.message.content.split()
+    des_msgcontent = " ".join(msgcontent[2:])
+    tagmsg = ""
+    tagmsg += ctx.message.author.mention + " says: " + des_msgcontent
+    tagmsg += "\n\n" + await _tag_lobby(ctx)
+    await Squirtudo.send_message(ctx.message.channel, tagmsg)
+
+async def _tag_lobby(ctx):
+    ctx_lobbycount = 0
+    trainer_dict = copy.deepcopy(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['trainer_dict'])
+    for trainer in trainer_dict:
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status'] == "lobby" and memberexists:
+            ctx_lobbycount += trainer_dict[trainer]['count']
+
+    lobby_exstr = ""
+    lobby_list = []
+    for trainer in trainer_dict.keys():
+        memberexists = ctx.message.server.get_member(trainer)
+        if trainer_dict[trainer]['status']=='lobby' and memberexists:
+            user = ctx.message.server.get_member(trainer)
+            lobby_list.append(user.mention)
+    if ctx_lobbycount > 0:
+        lobby_exstr = _("{trainer_list}").format(trainer_list=", ".join(lobby_list))
+    else:
+        return ""
+
+    tag_l_msg = (_("{list_string}").format(list_string=lobby_exstr))
+    return tag_l_msg
+	
 @tag.command(pass_context=True,aliases=["mys","blue","b","Mystic","Mys","Blue","B"])
 @checks.activeraidchannel()
 async def mystic(ctx):
