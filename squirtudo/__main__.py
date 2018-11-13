@@ -173,7 +173,7 @@ def get_cp_range(pkmn):
             if pokemon == pkmn_number:
                 ind = raid_info["raid_eggs"][level]["pokemon"].index(pokemon)
                 exstr = ""
-                exstr += "Boosted: {boost_range}\nRegular: {noboost_range}".format(boost_range=raid_info["raid_eggs"][level]["boost_range"][ind],noboost_range=raid_info["raid_eggs"][level]["cp_range"][ind])
+                exstr += "*Boosted*: {boost_range}\n*Regular*: {noboost_range}".format(boost_range=raid_info["raid_eggs"][level]["boost_range"][ind],noboost_range=raid_info["raid_eggs"][level]["cp_range"][ind])
                 return exstr
 
 # Given a Pokemon name, return a list of its
@@ -4656,7 +4656,10 @@ async def _tag_team(ctx, team):
 @checks.raidchannel()
 async def cp(ctx):
     """Print cp range in active raid channel of current boss"""
-    await Squirtudo.send_message(get_cp_range(server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.channel.id]['pokemon']))
+    pkmn = server_dict[ctx.message.server.id]['raidchannel_dict'][ctx.message.channel.id]['pokemon']
+    msg = "__CP Range for **" + pkmn.capitalize() + ":\n**__"
+    msg += get_cp_range(pkmn)
+    await Squirtudo.send_message(ctx.message.channel, msg)
     return
 
 @list.command(pass_context=True)
