@@ -1919,7 +1919,7 @@ async def _wild(message):
         except discord.errors.NotFound:
             pass
 
-@Squirtudo.command(pass_context=True)
+@Squirtudo.command(pass_context=True,aliases=["r"])
 @checks.cityeggchannel()
 @checks.raidset()
 async def raid(ctx):
@@ -2083,10 +2083,10 @@ This channel will be deleted five minutes after the timer expires.""").format(po
     if raidexp is not False:
         await _timerset(raid_channel,raidexp)
     else:
-        await Squirtudo.send_message(raid_channel, content = _("Hey {member}, if you can, set the time left on the raid using **!timerset <minutes>** so others can check it with **!timer**.").format(member=message.author.mention))
+        await Squirtudo.send_message(raid_channel, content = _("Hey {member}, if you can, set the time left on the raid using **!timerset minutes** so others can check it with **!timer**. For example, if there are 29 mins left on the raid, type **!timerset 29**.").format(member=message.author.mention))
     event_loop.create_task(expiry_check(raid_channel))
 
-@Squirtudo.command(pass_context=True,aliases=["egg"])
+@Squirtudo.command(pass_context=True,aliases=["egg","e"])
 @checks.citychannel()
 @checks.raidset()
 async def raidegg(ctx):
@@ -2207,7 +2207,7 @@ This channel will be deleted five minutes after the timer expires.""").format(le
         if raidexp is not False:
             await _timerset(raid_channel,raidexp)
         else:
-            await Squirtudo.send_message(raid_channel, content = _("Hey {member}, if you can, set the time left until the egg hatches using **!timerset <minutes>** so others can check it with **!timer**.").format(member=message.author.mention))
+            await Squirtudo.send_message(raid_channel, content = _("Hey {member}, if you can, set the time left until the egg hatches using **!timerset minutes** so others can check it with **!timer**. For example, if there are 29 mins until the egg hatches, type **!timerset 29**.").format(member=message.author.mention))
         if len(raid_info['raid_eggs'][egg_level]['pokemon']) == 1:
             await _eggassume("assume "+ get_name(raid_info['raid_eggs'][egg_level]['pokemon'][0]), raid_channel)
         event_loop.create_task(expiry_check(raid_channel))
@@ -2638,10 +2638,10 @@ async def timerset(ctx,timer):
             if h.isdigit() and m.isdigit():
                 raidexp = 60 * int(h) + int(m)
             else:
-                await Squirtudo.send_message(channel, "I couldn't understand your time format. Try again like this: **!timerset <minutes>**")
+                await Squirtudo.send_message(channel, "I couldn't understand your time format. Try again like this: **!timerset minutes**. For example, if there are 29 mins until the raid ends or the egg hatches, type **!timerset 29**.")
                 return
         else:
-            await Squirtudo.send_message(channel, "I couldn't understand your time format. Try again like this: **!timerset <minutes>**")
+            await Squirtudo.send_message(channel, "I couldn't understand your time format. Try again like this: **!timerset minutes**. For example, if there are 29 mins until the raid ends or the egg hatches, type **!timerset 29**.")
             return
         if _timercheck(raidexp, maxtime):
             await Squirtudo.send_message(channel, _("Squirtudo...that's too long. Level {raidlevel} {raidtype}s currently last no more than {maxtime} minutes...").format(raidlevel=str(raidlevel),raidtype=raidtype.capitalize(), maxtime=str(maxtime)))
@@ -2954,7 +2954,7 @@ async def new(ctx):
         server_dict[message.server.id]['raidchannel_dict'][message.channel.id]['raidreport'] = newreportmsg.id
         return
 
-@Squirtudo.command(pass_context=True,aliases=["rec","r","rcv"])
+@Squirtudo.command(pass_context=True,aliases=["rec","rcv"])
 async def recover(ctx):
     """Recover a raid channel if it is no longer responding to commands
 
