@@ -2760,12 +2760,16 @@ async def starttime(ctx):
         except KeyError:
             alreadyset = False
         if "am" in " ".join(start_split).lower() or "pm" in " ".join(start_split).lower():
+            if ":" not in " ".join(start_split).lower():
+                start_split[0] = start_split[0][:-2]+":"+start_split[0][-2:]
             try:
                 start = datetime.datetime.strptime(" ".join(start_split), '%I:%M %p').replace(year=now.year, month=now.month, day=now.day)
             except ValueError:
                 await Squirtudo.send_message(channel, _("Your start time wasn't formatted correctly. Change your **!starttime** to match this format: **HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)"))
                 return
         else:
+            if ":" not in " ".join(start_split).lower():
+                start_split[0] = start_split[0][:-2]+":"+start_split[0][-2:]
             try:
                 start = datetime.datetime.strptime(" ".join(start_split), '%H:%M').replace(year=now.year, month=now.month, day=now.day)
             except ValueError:
