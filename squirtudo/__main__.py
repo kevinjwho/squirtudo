@@ -2488,7 +2488,7 @@ async def _exraid(ctx):
     raidreport = await Squirtudo.send_message(channel, content = _("EX raid egg reported by {member}! Details: {location_details}. Use the **!invite** command to gain access and coordinate in {raid_channel}").format(member=message.author.mention, location_details=raid_details, raid_channel=raid_channel.mention),embed=raid_embed)
     await asyncio.sleep(1) #Wait for the channel to be created.
 
-    raidmsg = _("""EX raid reported by {member} in {citychannel}! Details: {location_details}. Coordinate here after using **!invite** to gain access!
+    raidmsg = _("""EX raid reported by {member} in {citychannel}! Details: {location_details}. Coordinate here!
 
 Check out {tutorial} for help with commands.
 
